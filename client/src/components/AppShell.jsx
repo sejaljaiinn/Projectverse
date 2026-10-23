@@ -25,7 +25,7 @@ function AppShell() {
     /* @__PURE__ */ jsxs("div", { className: "mb-8 flex items-center gap-3 px-2", children: [
       /* @__PURE__ */ jsx("div", { className: "grid h-10 w-10 place-items-center rounded-xl bg-brand text-white", children: /* @__PURE__ */ jsx(BriefcaseBusiness, { size: 20 }) }),
       /* @__PURE__ */ jsxs("div", { children: [
-        /* @__PURE__ */ jsx("p", { className: "font-bold tracking-tight text-ink", children: "ProjectFlow" }),
+        /* @__PURE__ */ jsx("p", { className: "font-bold tracking-tight text-ink", children: "Project Management App" }),
         /* @__PURE__ */ jsx("p", { className: "text-xs text-slate-500", children: "Team workspace" })
       ] })
     ] }),

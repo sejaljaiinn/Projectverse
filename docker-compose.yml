@@ -3,13 +3,13 @@
 services:
   mongo:
     image: mongo:7
-    container_name: projectflow-mongo
+    container_name: ProjectFlow-mongo
     restart: unless-stopped
     command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
     ports:
       - "27017:27017"
     volumes:
-      - projectflow-mongo-data:/data/db
+      - ProjectFlow-mongo-data:/data/db
     healthcheck:
       test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
       interval: 10s
@@ -31,4 +31,4 @@ services:
       - "try { rs.status() } catch (error) { rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] }) }"
 
 volumes:
-  projectflow-mongo-data:
+ProjectFlow-mongo-data:

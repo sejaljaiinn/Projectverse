@@ -2,7 +2,7 @@
 
 ## 1. Product summary
 
-**Working name:** ProjectFlow  
+**Working name:** Project Management App  
 **Purpose:** A small, explainable collaborative project-management application for a full-stack engineering hackathon. It lets teams organize projects, assign and track tasks, discuss work, and enforce role-based access on the server.
 
 The first release is a local web application with a React client and a separately running Node.js API. The user confirmed that MongoDB Atlas is allowed for this challenge. Atlas is the selected database, accessed through a private `MONGO_URI` environment variable; Docker is not required.

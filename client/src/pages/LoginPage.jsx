@@ -33,7 +33,7 @@ function LoginPage() {
     try {
       const response = await api.post("/auth/login", input);
       setUser(response.data.data);
-      success("Welcome to ProjectFlow.");
+      success("Welcome to Project Management App.");
       navigate("/dashboard", { replace: true });
     } catch (failure) {
       error(apiMessage(failure));
@@ -47,11 +47,11 @@ function LoginPage() {
     /* @__PURE__ */ jsxs("div", { className: "hidden flex-1 flex-col justify-between bg-ink p-12 text-white lg:flex", children: [
       /* @__PURE__ */ jsxs("div", { className: "flex items-center gap-3", children: [
         /* @__PURE__ */ jsx("div", { className: "grid h-11 w-11 place-items-center rounded-xl bg-brand", children: /* @__PURE__ */ jsx(BriefcaseBusiness, {}) }),
-        /* @__PURE__ */ jsx("span", { className: "text-lg font-bold", children: "ProjectFlow" })
+        /* @__PURE__ */ jsx("span", { className: "text-lg font-bold", children: "Project Management App" })
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "max-w-lg", children: [
         /* @__PURE__ */ jsx("p", { className: "mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-300", children: "Better teamwork starts here" }),
-        /* @__PURE__ */ jsx("h1", { className: "text-5xl font-bold leading-tight", children: "One place for your team\u2019s next big thing." }),
+        /* @__PURE__ */ jsx("h1", { className: "text-5xl font-bold leading-tight", children: "Build Together Grow Together" }),
         /* @__PURE__ */ jsx("p", { className: "mt-5 text-lg text-slate-300", children: "Plan projects, keep tasks moving, and bring conversations closer to the work." })
       ] }),
       /* @__PURE__ */ jsx("p", { className: "text-sm text-slate-400", children: "Collaborate with confidence." })
@@ -59,7 +59,7 @@ function LoginPage() {
     /* @__PURE__ */ jsx("div", { className: "flex flex-1 items-center justify-center p-6 sm:p-12", children: /* @__PURE__ */ jsxs("div", { className: "w-full max-w-md", children: [
       /* @__PURE__ */ jsxs("div", { className: "mb-8 flex items-center gap-3 lg:hidden", children: [
         /* @__PURE__ */ jsx("div", { className: "grid h-10 w-10 place-items-center rounded-xl bg-brand text-white", children: /* @__PURE__ */ jsx(BriefcaseBusiness, { size: 20 }) }),
-        /* @__PURE__ */ jsx("b", { children: "ProjectFlow" })
+        /* @__PURE__ */ jsx("b", { children: "Project Management App" })
       ] }),
       /* @__PURE__ */ jsx("p", { className: "text-sm font-semibold text-brand", children: "WELCOME BACK" }),
       /* @__PURE__ */ jsx("h2", { className: "mt-2 text-3xl font-bold tracking-tight", children: "Sign in to your account" }),

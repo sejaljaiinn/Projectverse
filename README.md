@@ -27,7 +27,7 @@ ProjectFlow is a collaborative project-management app built with React + Vite (J
    On Windows PowerShell, use `if (!(Test-Path 'server\.env')) { Copy-Item 'server\.env.example' 'server\.env' }` to preserve existing settings.
 
 4. Set a long random `JWT_SECRET` in `server/.env`. Keep the `.env` file private; `.gitignore` excludes it.
-5. In Atlas, select **Connect > Drivers > Node.js**. Replace `MONGO_URI` in `server\.env` with that SRV connection string, replacing all placeholders and setting the database name to `projectflow`. URL-encode special characters in the password (for example, `@` becomes `%40`). Under **Network Access**, allow your current IP. Use a database user with read/write access to `projectflow`, not your Atlas website login. Do not add the local `replicaSet=rs0` option.
+5. In Atlas, select **Connect > Drivers > Node.js**. Replace `MONGO_URI` in `server\.env` with that SRV connection string, replacing all placeholders and setting the database name to `Project Management App`. URL-encode special characters in the password (for example, `@` becomes `%40`). Under **Network Access**, allow your current IP. Use a database user with read/write access to `Project Management App`, not your Atlas website login. Do not add the local `replicaSet=rs0` option.
 
    The API and seed reject an unfinished template or local connection string with setup guidance. Never commit or share your actual URI.
 
