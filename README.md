@@ -1,6 +1,6 @@
-# ProjectFlow
+# Projectverse
 
-ProjectFlow is a collaborative project-management app built with React + Vite (JavaScript), a separate Node.js/Express API, and MongoDB. It includes server-enforced roles, task comments, project membership, a demo seed, and optimistic task-version conflict handling.
+Projectverse is a collaborative project-management app built with React + Vite (JavaScript), a separate Node.js/Express API, and MongoDB. It includes server-enforced roles, task comments, project membership, a demo seed, and optimistic task-version conflict handling.
 
 > **Database:** MongoDB Atlas is the selected and approved database for this project. The frontend and API run locally; Docker is not required. Store your private Atlas URI only in `server\.env`.
 
